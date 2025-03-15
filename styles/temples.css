@@ -1,0 +1,147 @@
+:root {
+    --primary-color: rgb(22, 99, 165);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sansita;
+    
+}
+header {
+	background-color: var(--primary-color);
+	display: grid;
+    align-items: center;
+    /* justify-content: space-between; */
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+    color: white;
+    min-width: 440px;
+    position: relative;
+}
+#menu {
+	font-size: 3.4rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	color: #000;
+    position: absolute;
+    right: 10px;
+    top: 0;
+
+}
+
+#menu::before {
+	content: "≡";
+    color: #fff;
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	/* color: black; */
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+/* .navigation a:hover,
+.navigation a:active {
+	
+} */
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+    color: #fff;
+}
+nav {
+	font-size: 20px;
+    /* background-color: black; */
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+}
+
+nav a:hover {
+	text-decoration: underline double;
+	background-color: #eee;
+	color: rgb(4, 45, 70);
+}
+
+h1 {
+	font-size: 2rem;
+    font-family: 'Sansita Swashed';
+}
+main {
+    /* margin: 20px; */
+    margin: 30px auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+img {
+    border: 2px solid black;
+    margin: 20px 20px 0;
+    /* max-width: 100%; */
+    width: 350px;
+}
+figure {
+    border: 2px dotted aqua;
+    margin: 10px;
+    background-color: skyblue;
+}
+figcaption{
+    padding: 5px 20px;
+    text-align: center;
+    font-size: larger;
+}
+main h1{
+    text-align: center;
+    margin: 10px 0 30px;
+}
+.active {
+    color: yellow;
+}
+.year p{
+    display: inline;
+    
+}
+.modified {
+    color: yellow;
+    font-size: smaller;
+}
+footer {
+    background-color: var(--primary-color);
+    padding: 1% 0;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    min-width: 480px;
+}
