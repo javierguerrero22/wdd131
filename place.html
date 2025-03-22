@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="A page to let you know more about the country Venezuela">
+    <meta name="author" content="Javier Guerrero">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="color1"></div>
+        <div class="color2"><h1>Venezuela</h1></div>
+        <div class="color3"></div>
+    </header>
+    <main class="container">
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 751px )" srcset="images\place-hero-image-large.webp">
+                <img src="images/place-hero-image-small.webp" alt="Chigüire(Capibara) Image" width="750">
+            </picture>
+        </div>
+        <section class="data">
+                <h2>Data</h2>
+                <div class="data-row">
+                    <span class="label">Area:</span>
+                    <span class="value">916,445 km²</span>
+                  </div>
+                  <div class="data-row">
+                    <span class="label">Population:</span>
+                    <span class="value">28.3 million</span>
+                  </div>
+                  <div class="data-row">
+                    <span class="label">Capital:</span>
+                    <span class="value">Caracas</span>
+                  </div>
+                  <div class="data-row">
+                    <span class="label">Language:</span>
+                    <span class="value">Spanish</span>
+                  </div>
+                  <div class="data-row">
+                    <span class="label">Currency:</span>
+                    <span class="value">Venezuelan Bolívar</span>
+                  </div>
+                  <div class="data-row">
+                    <span class="label">Time Zone:</span>
+                    <span class="value">VET (UTC-4)</span>
+                  </div>
+                  <div class="data-row">
+                    <span class="label">Calling Code:</span>
+                    <span class="value">+58</span>
+                  </div>
+                  <div class="data-row">
+                    <span class="label">Internet TLD:</span>
+                    <span class="value">.ve</span>
+                  </div>
+            
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather_icon.svg" alt="Weather Icon Image" width="100">
+            <div class="data-row">
+              <span class="label">Temperature:</span>
+              <span class="value" id="temperature">28°C</span>
+            </div>
+            <div class="data-row">
+              <span class="label">Conditions:</span>
+              <span class="value" id="conditions">Sunny</span>
+            </div>
+            <div class="data-row">
+              <span class="label">Wind:</span>
+              <span class="value" id="wind">20kph</span>
+            </div>
+            <div class="data-row">
+              <span class="label">Windchill:</span>
+              <span class="value" id="windchill">Spanish</span>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+  <div class="current year">
+    <p>© <span id="year"></span> 🐲 Javier Guerrero 🐲 Venezuela</p>
+  </div>
+  <p class="last modified" id="lastModified"></p>
+</footer>
+</body>
+</html>
