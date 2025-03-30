@@ -7,14 +7,13 @@
     font-family: sansita;    
 }
 html, body {
-    width: 100%; /* Asegura que no excedan el ancho del viewport */
-    overflow-x: hidden; /* Esconde cualquier desbordamiento horizontal */
+    width: 100%; 
+    overflow-x: hidden; 
   }
 header {
 	background-color: var(--primary-color);
 	display: grid;
     align-items: center;
-    /* justify-content: space-between; */
 	grid-gap: 1rem;
 	padding: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
@@ -22,7 +21,6 @@ header {
     color: white;
     min-width: 440px;
     width: 100%;
-    /* position: relative; */
 }
 #menu {
 	font-size: 3.4rem;

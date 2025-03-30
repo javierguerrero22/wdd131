@@ -50,12 +50,6 @@
 	nav a {
 		flex: 1 1 100%;
 	}
-    img {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-        display: block;
-    }
     header, main, footer {
         width: 100%;
         /* max-width: 100%;  */
@@ -74,12 +68,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         place-items: center;
-    }
-    img{
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-        display: block;
     }
     h2{
         grid-column: 1/4;
