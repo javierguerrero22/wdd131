@@ -66,7 +66,7 @@
       }
 }
 @media (min-width: 1025px) {
-    
+
     .res-grid{
         /* margin: 20px; */
         max-width: 100%;
@@ -101,7 +101,7 @@
     }
     h2{
         grid-column: 1/4;
-        font-size: xxx-large;
+        font-size: 35px;
     }
     
     header, main, footer {
@@ -111,12 +111,15 @@
         margin: 0;
         font-size: xxx-large;
       }
-    section p, footer {
+    section p, h3, footer {
         font-size: x-large;
     }
-
+    
 } 
 @media (min-width: 1430px){
+    h2{
+        font-size: xxx-large;
+    }
     section p, h3, footer {
         font-size: xx-large;
     }
