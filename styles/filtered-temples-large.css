@@ -111,9 +111,10 @@
         margin: 0;
         font-size: xxx-large;
       }
-    section p, h3, footer {
+    section p, footer {
         font-size: x-large;
     }
+
 } 
 @media (min-width: 1430px){
     section p, h3, footer {
