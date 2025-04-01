@@ -91,9 +91,42 @@ const temples = [
 		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/800x500/slctemple7.jpg"
 	}
   ];
-createTempleCard();
-function createTempleCard() {
-	temples.forEach(temple => {
+createTempleCard(temples);
+const navigationLinks = document.querySelectorAll('.navigation a');
+
+navigationLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navigationLinks.forEach(navLink => navLink.classList.remove('active'));
+        link.classList.add('active');
+    });
+});
+
+document.querySelector('#home').addEventListener('click', () => {
+	document.querySelector('.res-grid').innerHTML = '';
+	createTempleCard(temples);
+});
+const old = document.querySelector('#old')
+old.addEventListener('click', () =>{
+	document.querySelector('.res-grid').innerHTML = '';
+	createTempleCard(temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900 ))
+} );
+const newT = document.querySelector('#new')
+newT.addEventListener('click', () =>{
+	document.querySelector('.res-grid').innerHTML = '';
+	createTempleCard(temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000 ))
+} );
+const large = document.querySelector('#large')
+large.addEventListener('click', () =>{
+	document.querySelector('.res-grid').innerHTML = '';
+	createTempleCard(temples.filter(temple => temple.area > 90000))
+} )
+const small = document.querySelector('#small')
+small.addEventListener('click', () =>{
+	document.querySelector('.res-grid').innerHTML = '';
+	createTempleCard(temples.filter(temple => temple.area < 10000))
+} )
+function createTempleCard(filteredTemples) {
+	filteredTemples.forEach(temple => {
 		let card = document.createElement('section');
 		let name = document.createElement('h3');
 		let location = document.createElement('p');
