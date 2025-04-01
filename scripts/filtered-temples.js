@@ -108,12 +108,12 @@ document.querySelector('#home').addEventListener('click', () => {
 const old = document.querySelector('#old')
 old.addEventListener('click', () =>{
 	document.querySelector('.res-grid').innerHTML = '';
-	createTempleCard(temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900 ))
+	createTempleCard(temples.filter(temple => new Date(temple.dedicated).getFullYear() <= 1900 ))
 } );
 const newT = document.querySelector('#new')
 newT.addEventListener('click', () =>{
 	document.querySelector('.res-grid').innerHTML = '';
-	createTempleCard(temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000 ))
+	createTempleCard(temples.filter(temple => new Date(temple.dedicated).getFullYear() >= 2000 ))
 } );
 const large = document.querySelector('#large')
 large.addEventListener('click', () =>{
