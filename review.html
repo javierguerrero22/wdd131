@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        
+    <form id="reviewForm">
+        <fieldset>
+        <label for="producto">Product name:</label>
+        <select id="producto" name="producto" required>
+            <option value="" selected disabled> Choose a product...</option>
+        </select>
+        <input type="submit" value="Submit a review of my product"></input>
+    </fieldset>
+    </form>
+
+    <p id="count">Revisiones realizadas: 0</p>
+    
+    </main>
+    <footer>
+        <div class="current year">
+            <p>© <span id="year"></span> 🐲 Javier Guerrero 🐲 Venezuela</p>
+          </div>
+          <p class="last modified" id="lastModified"></p>
+    </footer>
+</body>
+</html>
