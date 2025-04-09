@@ -73,6 +73,9 @@ input[type="submit"]{
 strong{
   color: navy;
 }
+.required{
+  color: firebrick;
+}
 label, form p{
   padding-top: 15px;
   font-size: large;
