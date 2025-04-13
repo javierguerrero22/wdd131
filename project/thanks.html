@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maturín for the world - Regitered</title>
+    <meta name="author" content="Javier Guerrero">
+    <meta name="description" content="Congratullations for your registration ">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <script src="scripts/final-project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="agency">
+        <img src="images/project-logo.jpg" alt="Maturín logo" loading="lazy" width="150">
+        <h1><strong>Thanks for visit us!</strong></h1>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav >
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">Team</a></li>
+            <li><a href="contact.html" >Register</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <form id="reviewForm">
+            <fieldset>
+                <p id="thanks">Thanks for your registration, it help us a lot!</p>
+                <p>Overall Rating</p>
+                <div class="star-rating" id="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5" required>
+                    <label for="star-a"></label>
+            
+                    <input type="radio" name="stars" id="star-b" value="4">
+                    <label for="star-b"></label>
+                
+                    <input type="radio" name="stars" id="star-c" value="3">
+                    <label for="star-c"></label>
+                
+                    <input type="radio" name="stars" id="star-d" value="2">
+                    <label for="star-d"></label>
+                
+                    <input type="radio" name="stars" id="star-e" value="1">
+                    <label for="star-e"></label>
+                </div>
+            <input type="submit" value="Rate Us"></input>
+        </fieldset>
+        </form>
+
+        <p id="count">Ratings carried out: 0</p>
+
+    </main>
+    <footer>
+        <div class="current year">
+            <p>© <span id="year"></span> 🐲 Javier Guerrero 🐲 Venezuela</p>
+        </div>
+        <p class="last modified" id="lastModified"></p>
+    </footer>
+</body>
+</html>

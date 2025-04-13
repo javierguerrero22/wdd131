@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maturín for the world - Registration</title>
+    <meta name="author" content="Javier Guerrero">
+    <meta name="description" content="This page is for let you register in our program and enjoy">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <script src="scripts/final-project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="agency">
+        <img src="images/project-logo.jpg" alt="Maturín logo" loading="lazy" width="150">
+        <h1><strong>Tour Registration!</strong></h1>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav >
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">Team</a></li>
+            <li><a href="contact.html" class="active">Register</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Tour Registration</legend>
+                
+                <label for="fullName">Full Name:<strong class="required">*</strong></label>
+                <input type="text" id="fullName" name="fullName" required>
+            
+                <label for="phone">Phone:<strong class="required">*</strong></label>
+                <input type="tel" id="phone" name="phone" required>
+            
+                <label for="product_name">Trip to travel:<strong class="required">*</strong> </label>
+                    <select name="product_name" id="product_name" required>
+                        <option value="" selected disabled>Choose a tour...</option>
+                    </select>
+            
+                <label for="date">Preferred Date:<strong class="required">*</strong></label>
+                <input type="date" id="date" name="date" required>
+            
+                <label for="language">Preferred Language:</label>
+                <select id="language" name="language">
+                  <option value="english">English</option>
+                  <option value="spanish">Spanish</option>
+                  <option value="other">Other</option>
+                </select>
+            
+                <label for="specialRequests">Special Requests or comments: <strong>(Optional)</strong></label>
+                <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Dietary needs, accessibility, etc."></textarea>
+            
+                <label>
+                  <input type="checkbox" name="terms" required>
+                  I accept the terms and conditions.
+                </label>
+                <input type="submit" value="Submit my registration!">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="current year">
+            <p>© <span id="year"></span> 🐲 Javier Guerrero 🐲 Venezuela</p>
+        </div>
+        <p class="last modified" id="lastModified"></p>
+    </footer>
+</body>
+</html>

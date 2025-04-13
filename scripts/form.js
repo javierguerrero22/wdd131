@@ -63,12 +63,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 function capitalize(text) {
-  if (!text) return ""; // Verifica si el texto está vacío o undefined
+  if (!text) return ""; 
   return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
 }
 function populateSelect(selectId, products) {
   const selectElement = document.getElementById(selectId);
-  // selectElement.innerHTML = ""; 
+
   products.forEach(product => {
       const option = document.createElement("option");
       option.value = product.id;
