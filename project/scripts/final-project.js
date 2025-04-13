@@ -105,7 +105,7 @@ form.addEventListener("submit", function (event) {
     localStorage.setItem("reviews", count);
 
     
-    countElement.textContent = `Registrations carried out: ${count}`;})
+    countElement.textContent = `Ratings carried out: ${count}`;})
 
 
 function createplaceCard(filteredplaces) {
